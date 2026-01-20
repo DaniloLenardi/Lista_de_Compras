@@ -1,82 +1,110 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box; 
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
 header {
-    margin: 40px;
+    margin: 20px auto;
+    text-align: center;
 }
 
 header img {
-    display: flex;
-    margin: auto;
-    width: 15%;
+    max-width: 250px; 
+    width: 80%;       
+    height: auto;
 }
+
 
 form {
-    margin: auto;
-    width: 75%;
-    padding-bottom: 40px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px; 
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-form input {
-    padding: 2px;
-    border: 1px solid black;
+form label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form input, form select {
+    padding: 10px; 
+    border: 1px solid #ccc;
     border-radius: 4px;
-
+    width: 100%;
 }
 
-form select {
-    padding: 2px;
-    border: 1px solid black;
-    border-radius: 4px;
-}
-
-form button{
-    padding: 4px;
-    background-color: rgb(0, 252, 0);
+form button {
+    padding: 12px;
+    background-color: #2ecc71;
+    color: white;
+    font-weight: bold;
     border: none;
     border-radius: 4px;
-    transition: transform 0.1s ease-in;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
 }
 
-form button:hover{
-    transform: scale(1.12);
+form button:hover {
+    background-color: #27ae60;
+    transform: scale(1.02);
 }
 
-ul{
-    width: 50%;
-    margin: auto;
-    text-align: center;
+
+ul {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 0;
 }
 
-ul li{
+ul li {
     list-style: none;
-    margin: 20px;
-    border: 1px solid black;
-    border-radius: 6px;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
 }
 
-ul li button{
-    background-color: rgb(255, 27, 27);
-    padding: 4px;
+ul li button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 12px;
     border: none;
     border-radius: 4px;
-    transition: transform 0.1s ease-in;
+    cursor: pointer;
 }
 
-ul li button:hover{
-    transform: scale(1.12);
-}
-
-footer{
+footer {
+    margin-top: 30px;
+    padding-bottom: 50px;
     text-align: center;
 }
 
-footer button{
-    padding: 5px;
-    background-color: green;
+footer button {
+    padding: 15px 30px;
+    background-color: #27ae60;
+    color: white;
+    font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px; 
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
