@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Compras</title>
+</head>
+<body>
+    <header>
+        <img src="img/lista-de-compras.png" alt="lista">
+    </header>
+    <main>
+        <form>
+            <label for="item">Digite um Item para a lista:</label>
+            <input type="text" name="item" id="item">
+
+            <label for="quantidade">Digite a quantitade de itens:</label>
+            <input type="text" name="quantidade" id="quantidade">
+
+            <label for="unidade">Escolha a Unidade de Mediada:</label>
+            <select name="unidade" id="unidade">
+                <option value=""></option>
+                <option value="Quilogramas(kg)">KG</option>
+                <option value="Caixa(s)">CX</option>
+                <option value="Unidade(s)">UND</option>
+                <option value="Litro(s)">LT</option>
+                <option value="Pacote(s)">PAC</option>
+            </select>
+
+            <button type="button" onclick="enviar()">Enviar</button>
+        </form>
+    </main>
+    <ul id="lista">
+        <!--Itens da Lista-->
+    </ul>
+
+    <footer>
+        <button onclick="gerarPDF()">Gerar PDF</button>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.3/jspdf.umd.min.js" integrity="sha512-+EeCylkt9WHJk5tGJxYdecHOcXFRME7qnbsfeMsdQL6NUPYm2+uGFmyleEqsmVoap/f3dN/sc3BX9t9kHXkHHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
